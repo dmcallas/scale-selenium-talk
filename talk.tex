@@ -3,11 +3,11 @@
 %\hbadness=10000
 %\vbadness=10000
 
-%\includegraphics<1>[viewport=0 0 299 146,height=1in]{mfd.pdf}
+
 
 \usetheme{Malmoe}
 
-\title[Automated Web Testing]{Automated Web Application Testing for DevOps}
+\title[Automated Web Application Testing]{Automated Web Application Testing for Dev and Ops}
 
 \author{Daniel M$^\text{c}$Allaster}
 
@@ -25,23 +25,65 @@
 \begin{frame}
 
 Web Testing Tools:
-\begin{itemize}[<+->]
-\item Selenium
-\item JMeter
-\item Proprietary
+\begin{itemize}
+\item<+-> Selenium
+  \begin{itemize}
+  \item<+-> Selenium IDE (Firefox plugin)
+  \item<+-> Python/Java/Ruby API
+  \end{itemize}
+\item<+-> JMeter
+\item<+-> Proprietary
 \end{itemize}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section[Developers]{How Developers Use Selenium}
+\section[Developers]{How Developers and QA Use Selenium}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
+  Automated Testing for {\bf Developers and QA}:
   \begin{itemize}[<+->]
-  \item 
+  \item Test-Driven Development
+  \item Automated Acceptance Testing
+  \item Load Testing
   \end{itemize}
 \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section[Ops]{How Ops Can Use Selenium}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+  Automated Testing for {\bf Ops}:
+  \begin{itemize}[<+->]
+  \item Automated smoke testing of new deployments
+  \item Automated configuration changes for old apps
+  \item Application monitoring
+  \end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section[Best Practices]{Best practices for testing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+Best Practices
+\begin{columns}
+  \column{3in}
+  \begin{itemize}
+  \item<1-> Don't test in the UI (unless you have to)
+  \item<2-> Share the nitty-gritty code
+  \item<3-> Keep it simple
+  \item<4-> Resist the allure of one-off scripts
+  \end{itemize}
+  \column{3in}
+  \visible<1>{
+    \includegraphics[viewport=0 0 198 172,height=1.7in]{testing_triangle.pdf}\ 
+  }
+\end{columns}
+\end{frame}
+
 
 \section[]{Thank You!}
 \begin{frame}
