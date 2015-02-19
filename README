@@ -2,3 +2,7 @@ To generate slides, you must have LaTeX with the Beamer package.
 If everything is properly installed, a simple
     pdflatex talk.tex
 should be sufficient to generate the PDF for the slides.
+
+Image was created using xfig. If you edit, export from xfig to PDF. If
+you are changing the size or shape, be sure to adjust the bounding box
+in the LaTeX file.
